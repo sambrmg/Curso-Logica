@@ -1,0 +1,13 @@
+1 - Uma empresa quer verificar se um empregado está qualificado para a aposentadoria ou não. Para
+estar em condições, um dos seguintes requisitos deve ser satisfeito:
+ - Ter no mínimo 65 anos de idade.
+ - Ter trabalhado no mínimo 30 anos.
+ - Ter no mínimo 60 anos e ter trabalhado no mínimo 25 anos. 
+
+
+2 - Crie um programa para incluir 10 valores em uma array e depois mostrar eles
+
+3 - Calcule a media dos valores guardados do exercicio anterior (2)
+
+4 - Crie um programa para ler 5 notas de uma materia e calcular se o aluno foi aprovado nessa materia sendo que a 
+media para ser aprovado é 7
