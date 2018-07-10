@@ -11,3 +11,6 @@ estar em condições, um dos seguintes requisitos deve ser satisfeito:
 
 4 - Crie um programa para ler 5 notas de uma materia e calcular se o aluno foi aprovado nessa materia sendo que a 
 media para ser aprovado é 7
+
+5 - Crie um programa que mostre qual é o maior numero de uma lista "em array" exemplo
+var arr = [60, 20, 30, 100, 10, 30] 
