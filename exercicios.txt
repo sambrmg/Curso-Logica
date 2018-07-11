@@ -18,3 +18,10 @@ var arr = [60, 20, 30, 100, 10, 30]
 6 - Crie um programa para verificar se um triangulo é Equilátero, Isósceles ou Escaleno
 
 7 - Crie um programa que ordene em ordem decrescente um array (utilize o programa feito no numero 5 para isso)
+
+8 - Crie um programa que registre uma lista de tarefas e exiba as tarefas 
+    tente usar a estrutura de objeto para possibilitar mais opções como se ela está concluida ou não
+    {
+        tarefa: "Comprar arroz",
+        feita: false
+    }
