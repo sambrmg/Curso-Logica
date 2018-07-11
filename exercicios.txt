@@ -15,14 +15,6 @@ media para ser aprovado é 7
 5 - Crie um programa que mostre qual é o maior numero de uma lista "em array" exemplo
 var arr = [60, 20, 30, 100, 10, 30] 
 
-6 - Crie um programa para contar de 1 a 5 e logo em seguida de 5 a 1 e exibir os numeros
-    1
-    2
-    3
-    4
-    5
-    4
-    3
-    2
-    1
+6 - Crie um programa para verificar se um triangulo é Equilátero, Isósceles ou Escaleno
 
+7 - Crie um programa que ordene em ordem decrescente um array (utilize o programa feito no numero 5 para isso)
