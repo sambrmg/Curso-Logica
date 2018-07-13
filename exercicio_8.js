@@ -1,29 +1,47 @@
 var lista = []
 var loop = true
 
-while( loop ){
-    var descricao = prompt('Informe uma descricao')
-    if(descricao != null){
-        lista.push({ 
-            descricao: descricao,
-            concluido: false
-         });
-    }else{
-        loop = false
-        listar()
-    }
-    
+function adicionar(){
+    var tarefa = document.querySelector('#tarefa_input');
+    var concluido = document.querySelector('#concluido_input');
+    lista.push({ 
+        id: lista.length,
+        descricao: tarefa.value,
+        concluido: concluido.checked,
+        dataCriacao: new Date(),
+        dataConclusao: concluido.checked ? new Date() : null 
+    });
+
+    listar()
 }
+
+// while( loop ){
+//     var descricao = prompt('Informe uma descricao')
+//     if(descricao != null){
+//         lista.push({ 
+//             id: lista.length,
+//             descricao: descricao,
+//             concluido: false,
+//             dataCriacao: new Date(),
+//             dataConclusao: null
+//          });
+//     }else{
+//         loop = false
+//         listar()
+//     }
+    
+// }
 function apagarConteudo(){
     var ul = document.querySelector('#tarefas');
     ul.innerHTML = "";
 }
-function pesquisarParaConcluir(descricao){
+function pesquisarParaConcluir(id){
     for(var i = 0; i < lista.length; i++){
-       if(descricao == lista[i].descricao){
+       if(id == lista[i].id){
            if(lista[i].concluido){
             lista[i].concluido = false
-           }else{
+        }else{
+            lista[i].dataConclusao = new Date()
             lista[i].concluido = true
            }
            
@@ -39,8 +57,7 @@ function listar(){
     for(var i = 0; i < lista.length; i++){
         var simnao = lista[i].concluido ? 'concluido' : '';
         var check = lista[i].concluido ? 'checked' : '';
-        var valor = "'"+lista[i].descricao+"'";
-        ul.innerHTML = ul.innerHTML + '<li> <input type="checkbox" onclick="pesquisarParaConcluir('+valor+')" '+check+' > <span class="'+simnao+'">' + lista[i].descricao + ' </span></li>';
+        ul.innerHTML = ul.innerHTML + '<li> <input type="checkbox" onclick="pesquisarParaConcluir('+lista[i].id+')" '+check+' > <span class="'+simnao+'">' + lista[i].descricao + ' </span></li>';
         
     }
 } 

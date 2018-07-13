@@ -9,4 +9,6 @@ ul{
 
 .concluido{
     text-decoration: line-through;
+    color: gray;
+    font-style: italic;
 }
